@@ -24,7 +24,6 @@ void hanoi(int n, int start, int finish, int temp);
 
 int main()
 {
-	list();
 	menu();
 
 	system("pause");
@@ -32,7 +31,6 @@ int main()
 }
 void menu() 
 {
-	recursion();
 	while (1) {
 		char choice;
 		cout << "\n                       ---  Menu  ---" << endl;
@@ -40,7 +38,7 @@ void menu()
 		//cout << "*----------------------------------------------------------*" << endl;//60
 		cout << " 1.Stack     2.Queue     3.Recursion     4.List" << endl;
 		cout << "*                                                          *" << endl;
-		cout << " 4.(...)" << endl;
+		cout << " ?.(...)" << endl;
 		cout << "*                                                          *" << endl;
 		cout << "                             ..." << endl;
 		cout << " ----------------------------*" << endl;//30
@@ -55,6 +53,12 @@ void menu()
 			break;
 		case '2':
 			queue();
+			break;
+		case '3':
+			recursion();
+			break;
+		case '4':
+			list();
 			break;
 		case 'q':
 			exit(0);
